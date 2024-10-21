@@ -610,7 +610,7 @@ The values will be recorded in the GPE log. To find the log file after the query
 
 [source,gsql]
 ----
-BOOLEAN debug = TRUE;
+BOOL debug = TRUE;
 INT x = 10;
 
 LOG(debug, 20);
