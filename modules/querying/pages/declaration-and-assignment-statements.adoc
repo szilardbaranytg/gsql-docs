@@ -149,7 +149,7 @@ include::appendix:example$social_net/declaration_base_type_variables_value_assig
 [#_local_base_type_variables]
 === Local base type variables
 
-Base type variables declared in a DML-sub statement, such as in a statement inside a `ACCUM`, `POST-ACCUM`, or `UPDATE SET` clause, are called _local_ _base type variables_.
+Base type variables declared in a DML-sub statement, such as in a statement inside an `ACCUM`, `POST-ACCUM`, or `UPDATE SET` clause, are called _local_ _base type variables_.
 
 Local base type variables are block-scoped and are accessible in the block where they are declared only.
 Within a local base type variable's scope, you cannot declare another local base type variable, local container variable, or local tuple variable with the same name at the same level.
@@ -202,21 +202,21 @@ The following types are allowed:
 |Container type |Element type
 
 |`SET`
-|`INT`, `UINT`, `DOUBLE`, `FLOAT`, `STRING`, `JSON OBJECT`, `JSONARRAY`,`BOOL` `EDGE`, `DATETIME`, tuple
+|`INT`, `UINT`, `DOUBLE`, `FLOAT`, `STRING`, `JSONOBJECT`, `JSONARRAY`, `BOOL`, `EDGE`, `DATETIME`, tuple
 
 |`BAG`
-|`INT`, `UINT`, `DOUBLE`, `FLOAT`, `STRING`, `JSON OBJECT`, `JSONARRAY`,`BOOL`, `VERTEX` `EDGE`, `DATETIME`, tuple
+|`INT`, `UINT`, `DOUBLE`, `FLOAT`, `STRING`, `JSONOBJECT`, `JSONARRAY`, `BOOL`, `VERTEX` `EDGE`, `DATETIME`, tuple
 
 |`LIST`
-|`INT`, `UINT`, `DOUBLE`, `FLOAT`, `STRING`, `JSON OBJECT`, `JSONARRAY`,`BOOL`, `VERTEX` `EDGE`, `DATETIME`, `ListAccum` (Up to 3 levels of nesting), tuple
+|`INT`, `UINT`, `DOUBLE`, `FLOAT`, `STRING`, `JSONOBJECT`, `JSONARRAY`, `BOOL`, `VERTEX` `EDGE`, `DATETIME`, `ListAccum` (Up to 3 levels of nesting), tuple
 
 |`MAP`
-a|* Key types: `INT`, `UINT`, `DOUBLE`, `FLOAT`, `STRING`, `JSON OBJECT`, `JSONARRAY`,`BOOL`, `VERTEX` `EDGE`, `DATETIME`, tuple
-* Value types: `INT`, `UINT`, `DOUBLE`, `FLOAT`, `STRING`, `JSON OBJECT`, `JSONARRAY`,`BOOL`, `VERTEX` `EDGE`, `DATETIME`, tuple, any accumulator type except for `HeapAccum`
+a|* Key types: `INT`, `UINT`, `DOUBLE`, `FLOAT`, `STRING`, `JSONOBJECT`, `JSONARRAY`, `BOOL`, `VERTEX` `EDGE`, `DATETIME`, tuple
+* Value types: `INT`, `UINT`, `DOUBLE`, `FLOAT`, `STRING`, `JSONOBJECT`, `JSONARRAY`, `BOOL`, `VERTEX` `EDGE`, `DATETIME`, tuple, any accumulator type except for `HeapAccum`
 |===
 
 
-You must declare which type the container variable will be storing when you declare the container variable.
+You must declare which type the container variable will be stored when you declare the container variable.
 
 .Local container variable declaration
 [tabs]
